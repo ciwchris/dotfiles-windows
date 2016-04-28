@@ -1,0 +1,35 @@
+
+" Basic Options ----------------------------------------------------------- {{{
+set backspace=indent,eol,start
+
+set history=1000		" keep 1000 lines of command line history
+set incsearch			" do incremental searching
+set hlsearch
+set tabstop=4
+
+set scrolloff=5 		" 5 lines bevore and after the current line when scrolling
+set ignorecase			" ignore case
+set smartcase			" but don't ignore it, when search string contains uppercase letters
+set shiftwidth=4		" 4 characters for indenting
+
+set expandtab			" so VS will use spaces instead of inserting tabs
+
+"
+" }}}
+
+" Mappings ---------------------------------------------------------------- {{{
+
+" With a map leader it's possible to do extra key combinations
+let mapleader = "\<Space>"
+let maplocalleader = "\<Space>"
+let g:mapleader = "\<Space>"
+
+" Page down with space bar
+:noremap <space> <C-f>
+
+" remove search highlighting with escape
+:nnoremap <esc> :noh<return><esc>
+
+
+"}}}
+
